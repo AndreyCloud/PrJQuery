@@ -17,6 +17,6 @@ $(document).ready(function () {
 
     $('.small a img').click(function() {
         $('.small a img').fadeTo(100,1).css({'border':'none'});
-        $(this).fadeTo(400, 0.6).css({'border':'1px dotted red'})        
+        $(this).fadeTo(400, 0.6).css({'border':'1px dotted red'});        
     });
 });
