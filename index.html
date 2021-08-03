@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
    <script src="js/main.js"></script>
    <title>Галерея изображений на jQuey</title>
 </head>
+
 <body>
    <div class="button">-</div>
    <div class="gallery">
@@ -22,5 +24,46 @@
          <a href="images/gallery/4.jpg"><img src="images/gallery/4_mini.jpg" alt="Миниатюра 4" /></a>
       </div>
    </div>
+   <div class="generator">
+      <div class="generator-wraper">
+         <h1>Text-shadow generator</h1>
+         <div class="generator__input">
+            <h2>Настройки</h2>
+            <div class="generator__input-wraper">
+               <ul class="settings">
+                  <li class="settings__item">
+                     <label for="font-size">Размер шрифта</label>
+                     <input type="range" id="font-size" min="8" max="40" step="1" value="40">
+                  </li>
+                  <li class="settings__item">
+                     <label for="offset_x">Смещение по оси X</label>
+                     <input type="range" id="offset_x" min="-15" max="15" step="1" value="4">
+                  </li>
+                  <li class="settings__item">
+                     <label for="offset_y">Смещение по оси Y</label>
+                     <input type="range" id="offset_y" min="-15" max="15" step="1" value="-5">
+                  </li>
+                  <li class="settings__item">
+                     <label for="blur">Размытие</label>
+                     <input type="range" id="blur" min="" max="15" step="1" value="0">
+                  </li>
+                  <li class="settings__item">
+                     <label for="opacity">Прозрачность</label>
+                     <input type="range" id="opacity" min="0" max="1" step="0.01" value="1">
+                  </li>
+                  <li class="settings__item">
+                     <label for="color">Цвет</label>
+                     <input type="color" id="color" value="#a3a3a3">
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="generator__result">
+            <label for="result">Тень CSS</label>
+            <textarea name="" id="result" cols="30" rows="3" readonly></textarea>
+         </div>
+      </div>
+   </div>
 </body>
+
 </html>
