@@ -20,7 +20,7 @@ $(document).ready(function () {
         $(this).fadeTo(400, 0.6).css({ 'outline': '1px dotted red' });
     });
 
-    function cssShadow({
+    function cssShadow ({
         font_size,
         offset_x,
         offset_y,
